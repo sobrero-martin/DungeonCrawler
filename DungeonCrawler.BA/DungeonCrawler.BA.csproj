@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{073CE10D-F156-4E14-917A-686F3B3627D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DungeonCrawler.BA</RootNamespace>
+    <AssemblyName>DungeonCrawler.BA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Armor.cs" />
+    <Compile Include="Armor_List.cs" />
+    <Compile Include="Attack.cs" />
+    <Compile Include="Attack_List.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Inventory_List.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Item_List.cs" />
+    <Compile Include="Monster.cs" />
+    <Compile Include="Monster_Attack.cs" />
+    <Compile Include="Monster_Attack_List.cs" />
+    <Compile Include="Monster_Drop.cs" />
+    <Compile Include="Monster_Drop_List.cs" />
+    <Compile Include="Monster_List.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Player_List.cs" />
+    <Compile Include="Player_Armor_List.cs" />
+    <Compile Include="Player_Armor.cs" />
+    <Compile Include="Player_Skill.cs" />
+    <Compile Include="Player_Skill_List.cs" />
+    <Compile Include="Potion.cs" />
+    <Compile Include="Potion_List.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skill.cs" />
+    <Compile Include="Skill_List.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="Weapon_List.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
