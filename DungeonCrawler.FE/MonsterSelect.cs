@@ -23,6 +23,11 @@ namespace DungeonCrawler.FE
         {
             InitializeComponent();
             this.pID = pID;
+            if(mList.Read(0) == null)
+            {
+                Monster skeleton = new Monster(1, "SKELETON", "A RELENTLESS UNDEAD WARRIOR...", 1, 10, 0);
+                mList.Insert(skeleton);
+            }
             lblMonsters.Text = mList.ToString();
         }
 
