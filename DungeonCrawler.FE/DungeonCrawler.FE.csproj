@@ -196,19 +196,7 @@
     <Content Include="Resources\Music\16OldFrenchSong.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Music\Beethoven _ Piano Sonata No. 8 Op. 13 _pathetique_,  Movement 3 _beethoven virus_ %28redone 2%29.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Music\bwv-988-aria.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Music\chopin_nocturne_op9_n3.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Resources\Music\Debussy _ Arabesque No. 1.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Music\summer-score-2.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Music\Tschaikowsky-op37.8.WAV">
