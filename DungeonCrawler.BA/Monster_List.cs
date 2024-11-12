@@ -73,13 +73,13 @@ namespace DungeonCrawler.BA
                 {
 
                     Monster monster = new Monster(
-                        Convert.ToInt32(List.Rows[id - 1]["ID"]),
-                        Convert.ToString(List.Rows[id - 1]["Name"]),
-                        Convert.ToString(List.Rows[id - 1]["Description"]),
-                        Convert.ToInt32(List.Rows[id - 1]["Level"]),
-                        Convert.ToInt32(List.Rows[id - 1]["Health"]),
-                        Convert.ToInt32(List.Rows[id - 1]["Experience"])
-                      );
+                        Convert.ToInt32(row["ID"]),
+                        Convert.ToString(row["Name"]),
+                        Convert.ToString(row["Description"]),
+                        Convert.ToInt32(row["Level"]),
+                        Convert.ToInt32(row["Health"]),
+                        Convert.ToInt32(row["Experience"])
+                        );
 
                     return monster;
 

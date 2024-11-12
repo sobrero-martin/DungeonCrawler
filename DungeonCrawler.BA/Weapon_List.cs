@@ -95,10 +95,10 @@ namespace DungeonCrawler.BA
                 {
 
                     Weapon weapon = new Weapon(
-                        Convert.ToInt32(List.Rows[id - 1]["ID"]),
-                        Convert.ToString(List.Rows[id - 1]["Name"]),
-                        Convert.ToInt32(List.Rows[id - 1]["Damage"]),
-                        Convert.ToInt32(List.Rows[id - 1]["Item_ID"])
+                        Convert.ToInt32(row["ID"]),
+                        Convert.ToString(row["Name"]),
+                        Convert.ToInt32(row["Damage"]),
+                        Convert.ToInt32(row["Item_ID"])
                         );
 
                     return weapon;
